@@ -67,3 +67,62 @@ body {
 .nav__links a:hover {
   color: var(--clr-primary);
 }
+/* ========== HERO SECTION ========== */
+.hero {
+  background: linear-gradient(
+    to bottom right,
+    #4e7dfc 0%,
+    #2d3a80 100%
+  );
+  color: var(--clr-light);
+  text-align: center;
+  padding: 6rem 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero__title {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  animation: slideUp 1s var(--ease) forwards;
+  opacity: 0;
+}
+
+.hero__subtitle {
+  animation: fadeIn 1.5s var(--ease) forwards;
+  animation-delay: 0.3s;
+  opacity: 0;
+  margin-bottom: 1.5rem;
+  max-width: 600px;
+  margin-inline: auto;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.75rem 1.75rem;
+  border-radius: var(--radius);
+  text-decoration: none;
+  transition: background 0.3s var(--ease), transform 0.3s var(--ease);
+}
+
+.btn--primary {
+  background: var(--clr-light);
+  color: var(--clr-primary);
+}
+
+.btn--primary:hover {
+  background: #f0f1ff;
+  transform: scale(1.05);
+}
+
+.btn--light {
+  border: 2px solid var(--clr-light);
+  color: var(--clr-light);
+  background: transparent;
+}
+
+.btn--light:hover {
+  background: var(--clr-light);
+  color: var(--clr-primary);
+}
